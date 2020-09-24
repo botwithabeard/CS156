@@ -1,0 +1,72 @@
+\pdfminorversion=4
+\documentclass[]{article}
+
+%%%%%%%%%%%%%%%%%%%
+% Packages/Macros %
+%%%%%%%%%%%%%%%%%%%
+\usepackage{amssymb,latexsym,amsmath}     % Standard packages
+
+
+%%%%%%%%%%%
+% Margins %
+%%%%%%%%%%%
+\addtolength{\textwidth}{1.0in}
+\addtolength{\textheight}{1.00in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\topmargin}{-.50in}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Theorem/Proof Environments %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{theorem}{Theorem}
+\newenvironment{proof}{\noindent{\bf Proof:}}{$\hfill \Box$ \vspace{10pt}}
+
+
+%%%%%%%%%%%%
+% Document %
+%%%%%%%%%%%%
+\begin{document}
+
+\title{HW4}
+\author{Amitesh Badkul}
+\maketitle
+
+\begin{abstract}
+This document contains my attempt at the homework 4 problems of the course
+Learning From Data ({\bf CS156}) as taught by {\em Yaser Abu-Mostafa, Caltech}.
+\end{abstract}
+
+
+%%%%%%%%%%%%%%%
+\begin{enumerate}
+\item[$\bullet$] {\bf Generalization Error}
+    \begin{enumerate}
+        \subitem {\small 1.[d], Using the VC-Bound Inequality the answer can be obtained}
+        \subitem {\small 2.[d], Devryoe's bound is the tighest, by graphing the functions it can be checked}
+        \subitem {\small 3.[c], Parrondo and Van den Broek's bound is the tighest, by graphing the functions it can be checked}
+    \end{enumerate}
+
+\item[$\bullet$] {\bf Bits and Variance}
+    \begin{enumerate}
+        \subitem {\small 4.[e], $\overline{g(x)}$=$2.50x$, simulation done t9hrough python}
+        \subitem {\small 5.[b], Variance is defined as $(\overline{g(x)}$-$f(x))^2$, wherein $f(x)$ is the target function, since the derivative of $sin(\pi x)$is approximately $3$ and hence the sqaure of the difference comes out to be close to 0.3}
+        \subitem {\small 6.[a], variance is defined as deviation of any hypothesis from the approximate function, since almost all the hypothesis that are generated are centered around $g(x)}$ hence the answer is close to $0.1$}
+        \subitem {\small 7.[b], modified simulation with these fucntions gives us the answer that original hypothesis gives the least out-of sample error}
+    \end{enumerate}
+
+
+\item[$\bullet$] {\bf VC Dimension}
+    \begin{enumerate}
+        \subitem {\small 8.[c], $q+1$ is the breakpoint, hence q is the VC Dimension}
+        \subitem {\small 9.[b]}
+        \subitem {\small 10.[d]}
+    \end{enumerate}
+
+
+\end{enumerate}
+
+
+
+\end{document}

@@ -1,0 +1,7 @@
+VC Dimension basically is equal to the effective number of parameters or the degrees
+of freedom. dvc = d + 1, in case of Perceptrons in d-dimensional Euclieadean space
+and then we use this to obtain the generalization bound which helps us track the out of sample error
+without knowing the number of data points of the actual testing set. It is the
+sum of in-sample error and omega, wherein omega depends on the number of data points
+as well as the accuracy/sensitivity. As a rule of sum N>=10dvc.
+VC dimension of a hypothesis is the maximum number of points it can shatter.
